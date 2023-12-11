@@ -1,7 +1,7 @@
 {
-  "title": "ys.log",
+  "title": "ys.tech.blog",
   "url": "https://blog.adder.pe.kr",
-  "subtitle": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+  "subtitle": "YeSeong Ha's Tech Blog",
   "copyright": "© All rights reserved.",
   "googleAnalyticsId": "UA-73379983-2",
   "disqusShortname": "",
@@ -17,31 +17,17 @@
       "path": "/pages/about"
     },
     {
-      "label": "Contact me",
-      "path": "/pages/contacts"
+      "label": "Contact me"
     }
   ],
   "author": {
-    "name": "John Doe",
+    "name": "YeSeong Ha",
     "photo": "/photo.jpg",
-    "bio": "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+    "bio": "안녕하세요. ",
     "contacts": {
-      "rss": "",
-      "email": "",
-      "github": "#",
-      "facebook": "#",
-      "telegram": "#",
-      "twitter": "#",
-      "linkedin": "#",
-      "instagram": "#",
-      "mastodon": "#",
-      "line": "",
-      "weibo": "",
-      "gitlab": "",
-      "medium": "",
-      "youtube": "",
-      "codepen": "",
-      "soundcloud": ""
+      "email": "#",
+      "github": "https://github.com/yeseong9769",
+      "linkedin": "#"
     }
   }
 }
