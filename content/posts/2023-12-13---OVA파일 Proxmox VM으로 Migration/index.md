@@ -10,7 +10,7 @@ tags:
   - "OVA"
   - "Migration"
   - "VirtualBox"
-description: "OVA는 Open Viratual Applicance 파일로, VirtualBox, VMWare 등의 가상화 프로그램에서 가상 머신(VM)과 관련된 다양한 파일을 저장하는데 사용합니다. 이 파일을 이용해서 가상화 디스크를 불러오고 VM을 시작할 수 있도록 만들어 줍니다. 그러나 Proxmox에서는 OVA 파일을 사용하지 않습니다. 그렇기 때문에 OVA에서 정의된 VM을 사용할 수가 없습니다. 따라서 이번 포스트에서는 OVA파일이 포함하고 있는 VM 디스크 파일을 이용해 저장된 VM을 사용할 수 있도록 하였습니다."
+description: "VirtualBox, VMWare등의 가상화 프로그램에서 Proxmox로 VM을 이전하기 위한 방법 중 하나입니다."
 ---
 
 OVA는 Open Viratual Applicance 파일로, VirtualBox, VMWare 등의 가상화 프로그램에서 가상 머신(VM)과 관련된 다양한 파일을 저장하는데 사용합니다. 이 파일을 이용해서 가상화 디스크를 불러오고 VM을 시작할 수 있도록 만들어 줍니다. 그러나 Proxmox에서는 OVA 파일을 사용하지 않습니다. 그렇기 때문에 OVA에서 정의된 VM을 사용할 수가 없습니다. 따라서 이번 포스트에서는 OVA파일이 포함하고 있는 VM 디스크 파일을 이용해 저장된 VM을 사용할 수 있도록 하였습니다.
