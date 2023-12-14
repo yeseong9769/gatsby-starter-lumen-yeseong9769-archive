@@ -16,7 +16,17 @@ description: "CentOS 9에서 하둡 시스템의 높은 가용성을 위해 멀�
 ---
 
 ## Prerequisites
-하둡 멀티노드 시스템을 구성하기 위해서 세개의 리눅스 시스템이 필요합니다. 이번 포스트에서는 아래와 같이 시스템을 구성할 것 입니다. Java를 설치하고 Hadoop을 설치하는 과정까지는 master 노드와 worker노드가 똑같기 때문에 master 노드의 설치를 완료하고 노드를 복사해 worker노드를 구성하시는 것을 추천드립니다.
+이번 포스트에서 사용한 소프트웨어들의 버전은 다음과 같습니다.
+
+```vim
+Software         Version
+CentOS           9
+Hadoop           3.3.6
+Java             11
+```
+<br>
+이번 포스트에서는 Hadoop Multinode Cluster 구성을 통해 높은 가용성을 가진 Hadoop 시스템을 구성하는 과정을 다룹니다. <br>
+이를 위해 아래와 같은 환경을 구성하였습니다.
 
 ```vim
 HostName         IP Address       Purpose
@@ -230,3 +240,17 @@ hadoop 사용자로 마스터 노드에 로그인하고 아래 명령을 실행�
 924 Jps
 ```
 <br>
+
+## 10. MapReduce Wordcount Test
+이제 Hadoop 클러스터가 정상적으로 작동하는지 확인하기 위해 MapReduce Wordcount 예제를 실행합니다. 이 예제는 Hadoop 클러스터에서 Wordcount 작업을 수행합니다. Wordcount.jar 파일은 인터넷에 검색하면 소스코드를 다운로드 받을 수 있습니다.
+
+```console
+[hadoop@hadoop-master ~]$ hadoop fs -mkdir -p /wordcount/input
+[hadoop@hadoop-master ~]$ hadoop fs -put /usr/local/hadoop/LICENSE.txt /wordcount/input
+[hadoop@hadoop-master ~]$ hadoop jar WordCount.jar com.care.WordCount.WordCount /wordcount/input /wordcount/output
+[hadoop@hadoop-master ~]$ hadoop fs -cat /wordcount/output/part-00000
+```
+<br>
+
+실행결과는 다음과 같습니다.<br>
+![WordCount_Result](image.png)
