@@ -17,8 +17,7 @@ description: "CentOS 9에서 하둡 시스템의 높은 가용성을 위해 멀�
 
 ## Prerequisites
 이번 포스트에서 사용한 소프트웨어들의 버전은 다음과 같습니다.
-
-```vim
+```
 Software         Version
 CentOS           9
 Hadoop           3.3.6
@@ -26,10 +25,8 @@ Java             11
 ```
 <br>
 
-이번 포스트에서는 Hadoop Multinode Cluster 구성을 통해 높은 가용성을 가진 Hadoop 시스템을 구성하는 과정을 다룹니다. <br>
-이를 위해 아래와 같은 환경을 구성하였습니다.
-
-```vim
+이번 포스트에서는 Hadoop Multinode Cluster 구성을 통해 높은 가용성을 가진 Hadoop 시스템을 구성하는 과정을 다룹니다. 이를 위해 아래와 같은 환경을 구성하였습니다.
+```
 HostName         IP Address       Purpose
 hadoop-master    192.168.0.101    Hadoop 마스터 노드
 hadoop-worker1   192.168.0.102    Hadoop worker node1
